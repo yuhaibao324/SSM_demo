@@ -8,101 +8,90 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringMVC Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-<!-- 版本号 -->
-   	<properties>
-  		<spring-mvc.version>4.3.5.RELEASE</spring-mvc.version>
-  		<commons-logging.version>1.2</commons-logging.version>
-  		<jstl.version>1.2</jstl.version>
-  		<jdk.version>1.8</jdk.version>
-  		<servlet-api.version>2.5</servlet-api.version>
-  		<spring.version>4.3.5</spring.version>
-  	</properties>
-  	
-  	<dependencies>
-  	 
-  	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>4.0.1</version>
-    <scope>provided</scope>
-</dependency>
-  	
-  	
-  	<!-- junit -->
-	<dependency>
-      	<groupId>junit</groupId>
-      	<artifactId>junit</artifactId>
-     	<version>3.8.1</version>
-      	<scope>test</scope>
-    </dependency>
-	<!-- spring mvc-->
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-core</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-aop</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-web</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-beans</artifactId>
-   		<version>${spring-mvc.version}</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
-	<dependency>
-   	 	<groupId>org.springframework</groupId>
-    	<artifactId>spring-expression</artifactId>
-    	<version>${spring-mvc.version}</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
-	<dependency>
-    	<groupId>commons-logging</groupId>
-    	<artifactId>commons-logging</artifactId>
-    	<version>${commons-logging.version}</version>
-	</dependency>
-	
-  </dependencies>
-  
-  	<build>
-  	<plugins>
-        <!-- 支持jdk1.8 -->
-    	<plugin>
-    		<groupId>org.apache.maven.plugins</groupId>
-    		<artifactId>maven-compiler-plugin</artifactId>
-    		<version>3.0</version>
-    		<configuration>
-    			<source>${jdk.version}</source>
-    			<target>${jdk.version}</target>
-    		</configuration>
-    	</plugin>
-    </plugins>  
-  
+	<!-- 版本号 -->
+	<properties>
+		<spring_mvc.version>4.3.5.RELEASE</spring_mvc.version>
+		<commons_logging.version>1.2</commons_logging.version>
+		<jstl.version>1.2</jstl.version>
+		<jdk.version>1.8</jdk.version>
+		<junit_version>3.8.1</junit_version>
+	</properties>
+
+	<dependencies>
+
+		<!-- junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit_version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- spring mvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${spring_mvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons_logging.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- 支持jdk1.8 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
 		<finalName>SpringMVC</finalName>
 	</build>
 </project>
