@@ -16,6 +16,7 @@
 		<jdk.version>1.8</jdk.version>
 		<junit_version>3.8.1</junit_version>
 		<jackson.version>2.9.8</jackson.version>
+		<json_lib.version>2.4</json_lib.version>
 	</properties>
 
 	<dependencies>
@@ -101,7 +102,6 @@
 			<artifactId>jackson-annotations</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
-
 
 	</dependencies>
 
