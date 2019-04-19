@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import testjstl.entity.Student;
 import testjstl.entity.User;
- 
 
 /**
  * @ClassName:  StudentController   
@@ -27,7 +26,7 @@ public class StudentController {
 	 */
 	@RequestMapping(value = "/student", method = RequestMethod.GET)
 	public ModelAndView student() {
-		
+
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("student");
 		/*
@@ -35,7 +34,7 @@ public class StudentController {
 		 *	当属性值不为command的时候，form 中要设置属性值commandName = "command" 	 
 		 */
 		mav.addObject("command1", new Student());
-		 
+
 		return mav;
 	}
 
