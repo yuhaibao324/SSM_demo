@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">        
    
     <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="testjstl.controller2 "/>
+    <context:component-scan base-package="testjstl"/>
     
     <mvc:annotation-driven />
     
