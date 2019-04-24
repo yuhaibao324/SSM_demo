@@ -83,10 +83,10 @@
 				*	返回的是json数据
 				*/
 				success : function(result) {
-					
+					alert("提交成功，请在Tomcat控制台查看服务端接收到的数据" );
 				}
 			});
-			alert("提交成功，请在Tomcat控制台查看服务端接收到的数据" );
+			 
 			 
 		});
 	</script>
